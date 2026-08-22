@@ -10,7 +10,7 @@ export function storeBufferGeometry(map, event){
 }
 
 async function computeBuffer(map, wkt){
-    const response = await fetch ("API_BASE_URL/geometry_manipulation/buffer", {
+    const response = await fetch (`${API_BASE_URL}/geometry_manipulation/buffer`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 

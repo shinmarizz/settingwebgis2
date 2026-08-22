@@ -11,7 +11,7 @@ export function storeAreaGeometry(event) {
 }
 
 async function computeArea(wkt){
-    const response = await fetch("API_BASE_URL/spatial_computation/area", {
+    const response = await fetch(`${API_BASE_URL}L/spatial_computation/area`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ geometry: wkt })
